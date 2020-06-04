@@ -23,11 +23,7 @@ WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
 
 WebUI.click(findTestObject('Web 03 - Only Image locator left/Page_CURA Healthcare Service/a_Make Appointment'))
 
-def username = findTestObject('Web 03 - Only Image locator left/Page_CURA Healthcare Service/input_Username_username')
-
-WebUI.setText(username, 'Hello Katalon!')
-
-WebUI.verifyElementAttributeValue(username, 'value', 'Hello Katalon!', 5)
+WebUI.setText(findTestObject('Web 03 - Only Image locator left/Page_CURA Healthcare Service/input_Username_username'), 'Hello Katalon!')
 
 WebUI.setEncryptedText(findTestObject('Web 03 - Only Image locator left/Page_CURA Healthcare Service/input_Password_password'), 
     'BRB8geN7c9U=')
