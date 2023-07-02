@@ -34,3 +34,5 @@ WebUI.setEncryptedText(findTestObject('Web 02 - Smart XPath Savior/Page_CURA Hea
 
 not_run: WebUI.closeBrowser()
 
+
+
